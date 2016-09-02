@@ -2,6 +2,33 @@
 // that are set in wyrm_core/wy_variables.sass. You'll find wyrm in bower_components if you're looking
 // for a reference.
 
+// Toucan vars
+$main-color: #A0D1C5
+$main-color-fade: #88B2A8
+$emphasis-color: #F3C600
+$inverted-color: white
+$gray-light: #f0f0f0
+$gray: #9f9f9f
+$text-color: #404040
+
+// Overrides
+$link-color: $main-color
+$link-color-visited: $main-color-fade
+$link-color-hioer: $emphasis-color
+$button-background-color: $main-color
+
+$background-color: $gray-light
+
+$base-font-size: 14px
+
+$green: $main-color
+$offgreen: $main-color-fade
+$yellow: $emphasis-color
+$blue: #5F91A0
+$red: #E78352
+
+// Theme
+
 $font-awesome-dir:                    "../font/"
 $static-img:                          "../img/"
 $mathjax-color:                       $text-color
@@ -9,7 +36,7 @@ $mathjax-color:                       $text-color
 $headerlink-color:                    $text-color
 
 // Code colors
-$text-viewcode-color:                 $green
+$text-viewcode-color:                 $main-color
 $text-codexref-color:                 $text-color
 
 // Definition list colors
@@ -20,40 +47,40 @@ $method-color:                        $gray
 $footer-color:                        $gray-light
 
 // Menu colors
-$menu-vertical-background-color:      $section-background-color
+$menu-vertical-background-color:      lighten($text-color, 15%)
 
 // Menu text colors
-$menu-color:                          $gray
-$menu-dark:                           lighten($menu-color,15%) !default
-$menu-medium:                         lighten($menu-color,25%) !default
-$menu-light:                          lighten($menu-color,45%) !default
-$menu-lighter:                        lighten($menu-color,60%) !default
+$menu-color:                          $gray-light
+$menu-dark:                           darken($menu-color,15%) !default
+$menu-medium:                         darken($menu-color,25%) !default
+$menu-light:                          darken($menu-color,45%) !default
+$menu-lighter:                        darken($menu-color,60%) !default
 
 // Menu link colors
-$menu-link-color:                     $text-color
-$menu-link-dark:                      $text-dark
-$menu-link-medium:                    $text-medium
-$menu-link-light:                     $text-light
-$menu-link-active:                    $white
+$menu-link-color:                     $inverted-color
+$menu-link-dark:                      $gray-light
+$menu-link-medium:                    $inverted-color
+$menu-link-light:                     $inverted-color
+$menu-link-active:                    $emphasis-color
 
 // Navigation colors
-$nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
-$nav-search-color:                    $section-background-color
-$nav-link-color:                      $blue
-$nav-link-color-visited:              $purple
-$nav-link-color-hover:                lighten($nav-link-color, 6%) !default
-$nav-link-color-alt:                  hsl(33, 100%, 51%)
+$nav-background-color:                $text-color
+$nav-search-background-color:         $main-color
+$nav-search-color:                    $inverted-color
+$nav-link-color:                      $inverted-color
+$nav-link-color-visited:              $inverted-color
+$nav-link-color-hover:                darken($nav-link-color, 6%) !default
+$nav-link-color-alt:                  $main-color-fade
 
 // Sidebar colors
-$sidebar-background-color:            $table-stripe-color
-$sidebar-border-color:                $table-border-color
-$sidebar-title-background-color:      $table-border-color
+$sidebar-background-color:            $text-color
+$sidebar-border-color:                transparent
+$sidebar-title-background-color:      transparent
 
 // Sphinx highlight color
-$highlight-color:                     $yellow
+$highlight-color:                     $emphasis-color
 
-$base-font-family:                    "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif
+$base-font-family:                    "Montserrat", "Helvetica Neue", Arial, sans-serif
 $custom-font-family:                  "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
 $custom-font-family2:                 Georgia, serif
 $code-font-family:                    Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace

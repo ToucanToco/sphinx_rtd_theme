@@ -52,3 +52,34 @@
 @import theme_mathjax
 @import theme_font_awesome_compatibility
 @import theme_font_local
+
+// Toucan styles
+h1
+  font-size: 300%
+  font-weight: 100
+
+.wy-menu.wy-menu-vertical
+  .caption
+    margin-top: 20px
+
+    &:first-child
+      margin-top: 0
+
+    .caption-text
+      font-size: smaller
+      color: $gray
+      letter-spacing: 1px
+
+  a
+    font-size: 0.8em
+    padding-top: 6px !important
+    padding-bottom: 6px !important
+
+    &.toctree-l1
+      font-weight: bold
+
+    &.current
+      color: $main-color
+
+.rst-content dl dt
+  font-weight: normal
